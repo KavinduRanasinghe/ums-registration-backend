@@ -9,6 +9,4 @@ public class UmsRegistrationBackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(UmsRegistrationBackendApplication.class, args);
 	}
-	
-
 }
