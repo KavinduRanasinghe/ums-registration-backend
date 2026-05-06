@@ -8,6 +8,7 @@ import lk.ac.wusl.fas.ums_registration_backend.application.service.allocation.Al
 @RestController
 @RequestMapping("/api/allocation")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class AdminAllocationController {
 	
 	private final AllocationService service;

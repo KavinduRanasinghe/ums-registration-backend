@@ -23,4 +23,23 @@ public class CourseModuleService {
 		
 		return repository.findByDepartmentInAndLevel(departments, level);
 	}
+	
+	public List<CourseModule> getAllModules() {
+		
+		return repository.findAll();
+	}
+	
+	public CourseModule addModule(
+			CourseModule module
+	) {
+		
+		return repository.save(module);
+	}
+	
+	public void deleteModule(
+			String code
+	) {
+		
+		repository.deleteById(code);
+	}
 }
