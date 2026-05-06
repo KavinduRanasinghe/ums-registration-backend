@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c69f731-0958-47b5-ad10-52d48297b789" name="Changes" comment="Updated workspace.xml" />
+    <list default="true" id="8c69f731-0958-47b5-ad10-52d48297b789" name="Changes" comment="Implement allocation service and admin controller for student allocation process">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/AllocationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/CourseModuleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/CombinationCapacity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/CourseModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/enums/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CombinationCapacityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CourseModuleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/util/CombinationMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/admin/AdminAllocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/module/CourseModuleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/shared/exception/BadRequestException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/shared/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/shared/util/ValidationUtil.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +30,13 @@
     <persistenceIdMap>
       <entry key="_E:/Projects/ums-registration-backend" value="3DBYOn9QPWB1mYdmvEI4luJGxsc" />
     </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
@@ -41,6 +64,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="3DBYOn9QPWB1mYdmvEI4luJGxsc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -112,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778003600109</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated workspace.xml">
+      <option name="closed" value="true" />
+      <created>1778004111609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1778004111609</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,7 +164,8 @@
     <MESSAGE value="Update application configuration and project settings" />
     <MESSAGE value="Refactor workspace configuration and clean up project settings" />
     <MESSAGE value="Updated workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated workspace.xml" />
+    <MESSAGE value="Implement allocation service and admin controller for student allocation process" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement allocation service and admin controller for student allocation process" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
