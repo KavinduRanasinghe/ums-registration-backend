@@ -4,11 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c69f731-0958-47b5-ad10-52d48297b789" name="Changes" comment="Add course registration functionality with related entities and controllers">
+    <list default="true" id="8c69f731-0958-47b5-ad10-52d48297b789" name="Changes" comment="Refactor CourseModuleController and update repository methods for improved module retrieval">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/dto/auth/LoginRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/dto/auth/LoginResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/dto/dashboard/CombinationStatsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/dto/dashboard/DashboardStatsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/dto/lecturer/LecturerModuleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/dto/lecturer/LecturerRegistrationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/dto/student/StudentRegistrationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/auth/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/auth/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/dashboard/DashboardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/lecturer/LecturerModuleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/lecturer/LecturerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/student/StudentRegistrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/AllocationLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/Lecturer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/LecturerModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/enums/Combination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/AllocationLogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/LecturerModuleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/LecturerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/PathRegistrationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/auth/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/dashboard/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/lecturer/LecturerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/lecturer/LecturerModuleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/CourseModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/CourseModuleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CourseModuleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CourseModuleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/module/CourseModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/module/CourseModuleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/AllocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/AllocationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CombinationCapacityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CombinationCapacityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/admin/AdminAllocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/admin/AdminAllocationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +78,9 @@
     &quot;accountId&quot;: &quot;a6c14974-710f-4893-8dee-9fc97bda9569&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -151,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778098031426</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactor CourseModuleController and update repository methods for improved module retrieval">
+      <option name="closed" value="true" />
+      <created>1778164772050</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778164772050</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +212,8 @@
     <MESSAGE value="Updated workspace.xml" />
     <MESSAGE value="Implement allocation service and admin controller for student allocation process" />
     <MESSAGE value="Add course registration functionality with related entities and controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add course registration functionality with related entities and controllers" />
+    <MESSAGE value="Refactor CourseModuleController and update repository methods for improved module retrieval" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor CourseModuleController and update repository methods for improved module retrieval" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
