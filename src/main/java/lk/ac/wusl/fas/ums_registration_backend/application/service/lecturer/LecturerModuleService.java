@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 import lk.ac.wusl.fas.ums_registration_backend.domain.entity.LecturerModule;
 
@@ -48,5 +49,36 @@ public class LecturerModuleService {
 		return repository.findByLecturerId(
 				lecturerId
 		);
+	}
+	
+	public void delete(UUID id) {
+		
+		repository.deleteById(id);
+	}
+	
+	public LecturerModule update(
+			
+			UUID id,
+			
+			LecturerModuleDTO dto
+	) {
+		
+		LecturerModule existing =
+				repository.findById(id)
+						.orElseThrow();
+		
+		existing.setLecturerId(
+				dto.getLecturerId()
+		);
+		
+		existing.setModuleCode(
+				dto.getModuleCode()
+		);
+		
+		existing.setModuleName(
+				dto.getModuleName()
+		);
+		
+		return repository.save(existing);
 	}
 }

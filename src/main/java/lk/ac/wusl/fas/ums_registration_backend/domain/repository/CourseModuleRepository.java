@@ -14,4 +14,8 @@ public interface CourseModuleRepository
 			List<Department> departments,
 			int level
 	);
+	
+	List<CourseModule> findByDepartment(
+			Department department
+	);
 }

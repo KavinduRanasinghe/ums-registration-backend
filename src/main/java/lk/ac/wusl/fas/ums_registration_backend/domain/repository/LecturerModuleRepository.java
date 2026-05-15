@@ -13,4 +13,6 @@ public interface LecturerModuleRepository
 	List<LecturerModule> findByLecturerId(
 			String lecturerId
 	);
+	
+	
 }

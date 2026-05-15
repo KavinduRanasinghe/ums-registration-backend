@@ -48,4 +48,13 @@ public class CourseModuleService {
 		
 		repository.deleteById(code);
 	}
+	
+	public List<CourseModule> getModulesByDepartment(
+			Department department
+	) {
+		
+		return repository.findByDepartment(
+				department
+		);
+	}
 }

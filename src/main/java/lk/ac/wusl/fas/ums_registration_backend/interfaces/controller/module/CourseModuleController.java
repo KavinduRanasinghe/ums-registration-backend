@@ -3,6 +3,7 @@ package lk.ac.wusl.fas.ums_registration_backend.interfaces.controller.module;
 import lk.ac.wusl.fas.ums_registration_backend.application.service.allocation.CourseModuleService;
 import lk.ac.wusl.fas.ums_registration_backend.domain.entity.CourseModule;
 import lk.ac.wusl.fas.ums_registration_backend.domain.enums.Combination;
+import lk.ac.wusl.fas.ums_registration_backend.domain.enums.Department;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -53,6 +54,17 @@ public class CourseModuleController {
 		return service.getModulesByCombination(
 				combination,
 				level
+		);
+	}
+	
+	@GetMapping("/department/{department}")
+	public List<CourseModule> getModulesByDepartment(
+			
+			@PathVariable Department department
+	) {
+		
+		return service.getModulesByDepartment(
+				department
 		);
 	}
 }

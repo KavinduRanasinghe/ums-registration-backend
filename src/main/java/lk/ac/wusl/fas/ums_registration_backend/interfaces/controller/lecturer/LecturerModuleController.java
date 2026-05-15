@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 import lk.ac.wusl.fas.ums_registration_backend.domain.entity.LecturerModule;
 
@@ -43,5 +44,25 @@ public class LecturerModuleController {
 		return service.getByLecturer(
 				lecturerId
 		);
+	}
+	
+	@DeleteMapping("/{id}")
+	public void deleteAssignment(
+			
+			@PathVariable UUID id
+	) {
+		
+		service.delete(id);
+	}
+	
+	@PutMapping("/{id}")
+	public LecturerModule updateAssignment(
+			
+			@PathVariable UUID id,
+			
+			@RequestBody LecturerModuleDTO dto
+	) {
+		
+		return service.update(id, dto);
 	}
 }
