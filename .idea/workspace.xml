@@ -4,22 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c69f731-0958-47b5-ad10-52d48297b789" name="Changes" comment="Implement allocation service and admin controller for student allocation process">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/AllocationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/CourseModuleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/CombinationCapacity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/CourseModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/enums/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CombinationCapacityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CourseModuleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/util/CombinationMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/admin/AdminAllocationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/module/CourseModuleController.java" afterDir="false" />
+    <list default="true" id="8c69f731-0958-47b5-ad10-52d48297b789" name="Changes" comment="Implement allocation logging and enhance allocation management in the admin controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/PathRegistration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/shared/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/shared/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/shared/util/ValidationUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/CourseModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/allocation/CourseModuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/lecturer/LecturerModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/lecturer/LecturerModuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CourseModuleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/CourseModuleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/LecturerModuleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/LecturerModuleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/lecturer/LecturerModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/lecturer/LecturerModuleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/module/CourseModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/module/CourseModuleController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +53,9 @@
     &quot;accountId&quot;: &quot;a6c14974-710f-4893-8dee-9fc97bda9569&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -71,20 +68,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.UmsRegistrationBackendApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java/jdk-17&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.UmsRegistrationBackendApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "#4 on dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Program Files/Java/jdk-17",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="UmsRegistrationBackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lk.ac.wusl.fas.ums_registration_backend.UmsRegistrationBackendApplication" />
@@ -146,7 +143,39 @@
       <option name="project" value="LOCAL" />
       <updated>1778004111609</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implement allocation service and admin controller for student allocation process">
+      <option name="closed" value="true" />
+      <created>1778053103108</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1778053103108</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add course registration functionality with related entities and controllers">
+      <option name="closed" value="true" />
+      <created>1778098031426</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778098031426</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refactor CourseModuleController and update repository methods for improved module retrieval">
+      <option name="closed" value="true" />
+      <created>1778164772050</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778164772050</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implement allocation logging and enhance allocation management in the admin controller">
+      <option name="closed" value="true" />
+      <created>1778777188948</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1778777188950</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +194,10 @@
     <MESSAGE value="Refactor workspace configuration and clean up project settings" />
     <MESSAGE value="Updated workspace.xml" />
     <MESSAGE value="Implement allocation service and admin controller for student allocation process" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement allocation service and admin controller for student allocation process" />
+    <MESSAGE value="Add course registration functionality with related entities and controllers" />
+    <MESSAGE value="Refactor CourseModuleController and update repository methods for improved module retrieval" />
+    <MESSAGE value="Implement allocation logging and enhance allocation management in the admin controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement allocation logging and enhance allocation management in the admin controller" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
