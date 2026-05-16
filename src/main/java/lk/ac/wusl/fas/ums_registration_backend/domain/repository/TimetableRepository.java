@@ -3,12 +3,17 @@ package lk.ac.wusl.fas.ums_registration_backend.domain.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalTime;
+import java.util.List;
 import java.util.UUID;
 
 import lk.ac.wusl.fas.ums_registration_backend.domain.entity.Timetable;
 
 public interface TimetableRepository
 		extends JpaRepository<Timetable, UUID> {
+	
+	// =====================================
+	// CHECK LECTURER CLASH
+	// =====================================
 	
 	boolean existsByLecturerIdAndDayAndStartTime(
 			
@@ -17,5 +22,14 @@ public interface TimetableRepository
 			String day,
 			
 			LocalTime startTime
+	);
+	
+	// =====================================
+	// GET BY LECTURER
+	// =====================================
+	
+	List<Timetable>
+	findByLecturerId(
+			String lecturerId
 	);
 }

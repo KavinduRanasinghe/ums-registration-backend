@@ -181,4 +181,18 @@ public class TimetableService {
 		
 		return timetableRepository.findAll();
 	}
+	
+	// =====================================
+	// GET TIMETABLE BY LECTURER
+	// =====================================
+	
+	public List<Timetable> getByLecturer(
+			String lecturerId
+	) {
+		
+		return timetableRepository
+				.findByLecturerId(
+						lecturerId
+				);
+	}
 }

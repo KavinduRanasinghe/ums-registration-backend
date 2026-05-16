@@ -30,7 +30,7 @@ public class TimetableController {
 	}
 	
 	// =====================================
-	// GET ALL TIMETABLES
+	// GET ALL
 	// =====================================
 	
 	@GetMapping
@@ -38,5 +38,21 @@ public class TimetableController {
 	public List<Timetable> getAll() {
 		
 		return service.getAll();
+	}
+	
+	// =====================================
+	// GET BY LECTURER
+	// =====================================
+	
+	@GetMapping("/lecturer/{lecturerId}")
+	
+	public List<Timetable> getByLecturer(
+			
+			@PathVariable String lecturerId
+	) {
+		
+		return service.getByLecturer(
+				lecturerId
+		);
 	}
 }

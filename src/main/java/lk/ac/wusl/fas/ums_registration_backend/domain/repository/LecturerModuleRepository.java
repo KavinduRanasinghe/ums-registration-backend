@@ -10,9 +10,12 @@ import lk.ac.wusl.fas.ums_registration_backend.domain.entity.LecturerModule;
 public interface LecturerModuleRepository
 		extends JpaRepository<LecturerModule, UUID> {
 	
-	List<LecturerModule> findByLecturerId(
+	// =====================================
+	// GET BY LECTURER
+	// =====================================
+	
+	List<LecturerModule>
+	findByLecturerId(
 			String lecturerId
 	);
-	
-	
 }

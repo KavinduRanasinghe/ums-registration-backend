@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c69f731-0958-47b5-ad10-52d48297b789" name="Changes" comment="Add Timetable entity, service, repository, and controller for timetable management">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/hall/HallService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/entity/Hall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/HallRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/hall/HallController.java" afterDir="false" />
+    <list default="true" id="8c69f731-0958-47b5-ad10-52d48297b789" name="Changes" comment="Add Hall entity, service, repository, and controller for hall management">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/module/RegisteredModuleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/module/RegisteredModuleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/timetable/TimetableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/application/service/timetable/TimetableService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/LecturerModuleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/LecturerModuleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/RegisteredModuleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/RegisteredModuleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/TimetableRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/domain/repository/TimetableRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/timetable/TimetableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ac/wusl/fas/ums_registration_backend/interfaces/controller/timetable/TimetableController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778870008654</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add Hall entity, service, repository, and controller for hall management">
+      <option name="closed" value="true" />
+      <created>1778907246033</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1778907246033</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +231,8 @@
     <MESSAGE value="Add functionality to retrieve course modules by department and implement update/delete operations for lecturer assignments" />
     <MESSAGE value="Add TimetableRule entity, service, repository, and controller for timetable management" />
     <MESSAGE value="Add Timetable entity, service, repository, and controller for timetable management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Timetable entity, service, repository, and controller for timetable management" />
+    <MESSAGE value="Add Hall entity, service, repository, and controller for hall management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Hall entity, service, repository, and controller for hall management" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
