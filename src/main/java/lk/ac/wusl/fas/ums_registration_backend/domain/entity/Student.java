@@ -27,7 +27,7 @@ public class Student {
 	private String gender;
 	private String district;
 	
-	@Column(nullable = false)
+	@Column(name = "z_score")
 	private Double zScore;
 	
 	private Integer level;
